@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Élite | Manejamos tu estilo</title>
+    <!-- Enlace al CSS dentro de la carpeta css/ -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navegación limpia -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo-text">Barbería <span>Élite</span></a>
+            <nav class="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#galeria">Galería & Videos</a>
+                <a href="#equipo">Barberos</a>
+                <a href="#reserva" class="btn-nav">Reservar Cita</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <!-- Logotipo más grande -->
+                <div class="hero-logo-container">
+                    <img src="img/logo.jpg" alt="Logotipo Barbería Élite" class="hero-logo-grande">
+                </div>
+                <span class="hero-subtitle">MANEJAMOS TU ESTILO</span>
+                <h1>TU CABELLO <br><span>MERECE</span> <br>LO MEJOR.</h1>
+                <p>Disfruta y relájate en un ambiente de barbería exclusivo y de lujo.</p>
+            </div>
+            <div class="hero-image">
+                <!-- Foto con efecto desvanecido -->
+                <img src="img/dueño.jpg" alt="Barbería Élite - Propietario trabajando" class="foto-desvanecida">
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Calidad garantizada en cada detalle</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cut"></i></div>
+                    <h3>Corte de Cabello</h3>
+                    <p>Cualquier tipo de corte a tu elección (clásico o moderno) con acabado profesional.</p>
+                    <span class="price">$14.000 COP</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+                    <h3>Combo Barba & Cabello</h3>
+                    <p>La experiencia completa: corte de cabello de cualquier estilo y arreglo profesional de barba.</p>
+                    <span class="price">$18.000 COP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Multimedia (Fotos y tu video) -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galería & Videos</h2>
+                <p>Nuestros mejores trabajos y cortes en acción</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/foto1.jpg" alt="Corte Barbería Élite 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto2.jpg" alt="Corte Barbería Élite 2">
+                </div>
+                
+                <!-- Tu video real de la carpeta img -->
+                <div class="gallery-item video-item">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <div class="video-badge"><i class="fas fa-play"></i> Video</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/foto3.jpg" alt="Corte Barbería Élite 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto4.jpg" alt="Corte Barbería Élite 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto5.jpg" alt="Corte Barbería Élite 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto6.jpg" alt="Corte Barbería Élite 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Barberos</h2>
+                <p>Profesionales apasionados por su oficio</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="img/dueño.jpg" alt="Propietario Barbería Élite">
+                    <h3>Master Barber</h3>
+                    <span>Propietario & Fundador</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Reservas -->
+    <section id="reserva" class="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Reserva tu Cita</h2>
+                <p>Agenda tu espacio o confírmala por WhatsApp</p>
+            </div>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required placeholder="Ej. Andrés Arrieta">
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="Corte de Cabello ($14.000)">Corte de Cabello - $14.000</option>
+                        <option value="Combo Barba & Cabello ($18.000)">Combo Barba & Cabello - $18.000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="barbero">Barbero Preferido</label>
+                    <select id="barbero" required>
+                        <option value="">Selecciona un barbero</option>
+                        <option value="Master Barber (Propietario)">Master Barber (Propietario)</option>
+                        <option value="Cualquiera disponible">Cualquiera disponible</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar Reserva por WhatsApp</button>
+            </form>
+            <div id="success-message" class="success-message hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>¡Reserva Preparada!</h3>
+                <p>Te estamos redirigiendo a WhatsApp para que envíes los datos de tu cita directamente.</p>
+            </div>
+        </div>
+    </section>
+     
+    <!-- Sección: Conoce Nuestro Local Actual -->
+<section id="local" class="local-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Conoce Nuestro Local</h2>
+            <p>Un espacio moderno y diseñado para ofrecerte la mejor experiencia</p>
+        </div>
+        
+        <div class="local-grid">
+            <div class="local-video-container">
+                <!-- REEMPLAZA "img/video-local.mp4" con el nombre real de tu video actual -->
+                <video src="img/video-local.mp4" class="local-video-grande" autoplay muted loop playsinline controls></video>
+            </div>
+            <div class="local-text">
+                <h3>Comodidad, estilo y el mejor ambiente</h3>
+                <p>Contamos con instalaciones totalmente equipadas y pensadas para tu máximo confort. Cada detalle en nuestro local está preparado para que disfrutes de tu corte o arreglo de barba en un ambiente profesional, limpio y con excelente vibra.</p>
+                <p>¡Te esperamos para que vivas la experiencia en persona!</p>
+                <a href="#reserva" class="btn btn-primary">Reserva tu Cita</a>
+            </div>
+        </div>
+    </div>
+</section>
+     
+    <!-- Seccion de Inicios / Nuestra Historia -->
+<section id="inicios" class="history-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestros Inicios</h2>
+            <p>Cómo nació nuestra pasión por el arte del estilo</p>
+        </div>
+        
+        <div class="history-grid">
+            <div class="history-text">
+                <h3>De un sueño pequeño a un referente de elegancia</h3>
+                <p>Nuestra trayectoria comenzó con una visión clara: transformar cada corte y cada servicio en una experiencia personalizada de alta calidad. Lo que empezó como un espacio modesto impulsado por la pura pasión y dedicación, hoy se ha consolidado gracias a la confianza de cada cliente que ha creído en nuestro talento desde el primer día.</p>
+                <p>Cada miembro de nuestro equipo comparte esa misma esencia de superación, perfeccionando técnicas a lo largo de los años para ofrecerte siempre lo mejor en tendencia, cuidado y profesionalismo.</p>
+            </div>
+            <div class="history-video-container">
+                <!-- Video destacado grande -->
+                <video src="img/video2.mp4" class="history-video-grande" autoplay muted loop playsinline controls></video>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573226916107?text=Hola,%20quiero%20más%20información%20sobre%20las%20citas%20en%20Barbería%20Élite" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Barbería Élite. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fjhanky_the_barbero%3Ffbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgVicmlkETFmQk5RUEhmeEp4T1FFZmJrc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHgGU15E7BtmgUP2P2uuqp2llMOcaXaTiWpMtrdEH75VNB73deR5AQok0dpqg_aem_ttPEfadMUsk6Ik0nPeLEPg&h=AUDFO9gV1xSvC01xCAUvbPaxM2QM4xb_Glzd73kjfnZ5ZupIViWmDPJMF5vuzt8j8ryoMzXwpVUyccNx43OEFz1M-pYyQOR9oXTGEMlYUNITYIOu_Fcmm-YmuRbWcx1D2FdI"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al JS dentro de la carpeta js/ -->
+    <script src="js/script.js"></script>
+</body>
+</html>
